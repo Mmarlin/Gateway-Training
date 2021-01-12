@@ -1,0 +1,16 @@
+2021-01-06 12:58:14,876 INFO MVC.Controllers.HomeController - Login Successfully
+2021-01-06 12:58:14,903 INFO MVC.Controllers.DashboardController - Logged In through Session
+2021-01-06 13:00:25,609 INFO MVC.Controllers.HomeController - Login Successfully
+2021-01-06 13:00:25,648 INFO MVC.Controllers.DashboardController - Logged In through Session
+2021-01-06 13:01:25,244 INFO MVC.Controllers.ProductController - Product Added Successfully.
+2021-01-06 13:02:23,006 INFO MVC.Controllers.ProductController - Product Added Successfully.
+2021-01-06 13:03:23,001 INFO MVC.Controllers.ProductController - Product Added Successfully.
+2021-01-06 13:03:50,502 INFO MVC.Controllers.ProductController - Product Added Successfully.
+2021-01-06 13:04:14,969 INFO MVC.Controllers.ProductController - Product Added Successfully.
+2021-01-06 13:04:43,301 INFO MVC.Controllers.ProductController - Product Added Successfully.
+2021-01-06 13:05:52,162 INFO MVC.Controllers.HomeController - Login Successfully
+2021-01-06 13:05:52,234 INFO MVC.Controllers.DashboardController - Logged In through Session
+2021-01-06 13:06:20,913 INFO MVC.Controllers.ProductController - Product Deleted Successfully.
+2021-01-06 13:06:45,434 INFO MVC.Controllers.ProductController - Selected Product Deleted Successfully.
+2021-01-06 13:06:45,460 INFO MVC.Controllers.ProductController - Selected Product Deleted Successfully.
+2021-01-06 13:07:28,887 INFO MVC.Controllers.HomeController - Logged Out Successfully
