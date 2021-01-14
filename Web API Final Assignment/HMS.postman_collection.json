@@ -1,0 +1,1917 @@
+{
+	"info": {
+		"_postman_id": "1ec93f7a-a3fe-4efb-b545-c61d460c0c78",
+		"name": "HMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Rooms",
+			"item": [
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":3,\r\n    \"RoomName\":\"A101\",\r\n    \"RoomCategory\":\"Categories 1\",\r\n    \"RoomPrice\":\"2000\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":3,\r\n    \"RoomName\":\"B101\",\r\n    \"RoomCategory\":\"Categories 2\",\r\n    \"RoomPrice\":\"5000\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":3,\r\n    \"RoomName\":\"C101\",\r\n    \"RoomCategory\":\"Categories 3\",\r\n    \"RoomPrice\":\"10000\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":4,\r\n    \"RoomName\":\"Z101\",\r\n    \"RoomCategory\":\"Categories 1\",\r\n    \"RoomPrice\":\"1000\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":4,\r\n    \"RoomName\":\"Z102\",\r\n    \"RoomCategory\":\"Categories 2\",\r\n    \"RoomPrice\":\"2000\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":4,\r\n    \"RoomName\":\"Z103\",\r\n    \"RoomCategory\":\"Categories 3\",\r\n    \"RoomPrice\":\"2500\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":5,\r\n    \"RoomName\":\"S1\",\r\n    \"RoomCategory\":\"Categories 1\",\r\n    \"RoomPrice\":\"2500\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":5,\r\n    \"RoomName\":\"S2\",\r\n    \"RoomCategory\":\"Categories 2\",\r\n    \"RoomPrice\":\"5000\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":5,\r\n    \"RoomName\":\"S3\",\r\n    \"RoomCategory\":\"Categories 3\",\r\n    \"RoomPrice\":\"8000\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":6,\r\n    \"RoomName\":\"G1\",\r\n    \"RoomCategory\":\"Categories 1\",\r\n    \"RoomPrice\":\"800\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":6,\r\n    \"RoomName\":\"G2\",\r\n    \"RoomCategory\":\"Categories 2\",\r\n    \"RoomPrice\":\"2000\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":6,\r\n    \"RoomName\":\"G3\",\r\n    \"RoomCategory\":\"Categories 3\",\r\n    \"RoomPrice\":\"2500\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":7,\r\n    \"RoomName\":\"D101\",\r\n    \"RoomCategory\":\"Categories 1\",\r\n    \"RoomPrice\":\"2500\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":7,\r\n    \"RoomName\":\"D201\",\r\n    \"RoomCategory\":\"Categories 2\",\r\n    \"RoomPrice\":\"5000\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HotelID\":7,\r\n    \"RoomName\":\"D301\",\r\n    \"RoomCategory\":\"Categories 3\",\r\n    \"RoomPrice\":\"7000\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "Admin",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "Admin",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "BookedRoom",
+			"item": [
+				{
+					"name": "https://localhost:44325/api/booking",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RoomID\":2,\r\n    \"BookingDate\":\"2021-01-14\",\r\n    \"Status\":\"Optional\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/booking",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/booking",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RoomID\":5,\r\n    \"BookingDate\":\"2021-01-14\",\r\n    \"Status\":\"Optional\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/booking",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/booking",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RoomID\":8,\r\n    \"BookingDate\":\"2021-01-14\",\r\n    \"Status\":\"Optional\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/booking",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UpdateBookingDate",
+			"item": [
+				{
+					"name": "https://localhost:44325/api/booking/putDate/10",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BookingDate\":\"2021-01-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/booking/putDate/10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"booking",
+								"putDate",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/booking/putDate/11",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BookingDate\":\"2021-01-16\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/booking/putDate/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"booking",
+								"putDate",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UpdateBookingStatus",
+			"item": [
+				{
+					"name": "https://localhost:44325/api/booking/putStatus/12",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Status\":\"Definitive\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/booking/putStatus/12",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"booking",
+								"putStatus",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/booking/putStatus/11",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Status\":\"Cancelled\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/booking/putStatus/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"booking",
+								"putStatus",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetAvailableRoom",
+			"item": [
+				{
+					"name": "https://localhost:44325/api/room/GetAvailable/3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BookingDate\" : \"2021-01-14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room/GetAvailable/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room",
+								"GetAvailable",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room/GetAvailable/3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BookingDate\" : \"2021-01-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room/GetAvailable/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room",
+								"GetAvailable",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room/GetAvailable/3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BookingDate\" : \"2021-01-16\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room/GetAvailable/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room",
+								"GetAvailable",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room/GetAvailable/3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BookingDate\" : \"2021-01-14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room/GetAvailable/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room",
+								"GetAvailable",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Unauthorized Request",
+			"item": [
+				{
+					"name": "https://localhost:44325/api/hotel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44325/api/hotel",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"hotel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room With Optional Parameter",
+			"item": [
+				{
+					"name": "https://localhost:44325/api/room/GetRoom",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room/GetRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room",
+								"GetRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room/GetRoom",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"City\":\"Rajkot\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room/GetRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room",
+								"GetRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room/GetRoom",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Pincode\":360001\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room/GetRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room",
+								"GetRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room/GetRoom",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Price\" : 4000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room/GetRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room",
+								"GetRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room/GetRoom",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Category\" : \"Categories 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room/GetRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room",
+								"GetRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room/GetRoom",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Pincode\" : \"360001\",\r\n    \"Category\" : \"Categories 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room/GetRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room",
+								"GetRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44325/api/room/GetRoom",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Pincode\" : \"360001\",\r\n    \"Price\" : 5000,\r\n    \"Category\" : \"Categories 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/room/GetRoom",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"room",
+								"GetRoom"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "Admin",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "Admin",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44325/api/hotel",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelName\":\"Sayaji Hotel\",\r\n    \"Address\":\"Vrindavan Society Main road, beside Pradhyuman Green City Tower, Kalavad Rd, Rajkot, Gujarat 360005\",\r\n    \"City\":\"Rajkot\",\r\n    \"Pincode\":\"360005\",\r\n    \"Contact\":\"73899 07945\",\r\n    \"ContactPerson\":\"Shyambhai\",\r\n    \"Website\":\"https://www.sayajihotels.com/sayaji-hotels/sayaji-rajkot/\",\r\n    \"Facebook\":\"https://www.facebook.com/SayajiRajkot/\",\r\n    \"Twitter\":\"https://twitter.com/sayajihotelsltd\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44325/api/hotel",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelName\":\"Hotel Park Inn Rajkot\",\r\n    \"Address\":\"Krishna Arcade, Press Road, Near Phulchhab Chowk, Sadar Bazar, Sadar, Rajkot, Gujarat 360001\",\r\n    \"City\":\"Rajkot\",\r\n    \"Pincode\":\"360001\",\r\n    \"Contact\":\"0124 620 1615\",\r\n    \"ContactPerson\":\"Vinaybhai\",\r\n    \"Website\":\"https://www.hotelinn.in/\",\r\n    \"Facebook\":\"https://www.facebook.com/pages/category/Hotel/Hotel-Parkinn-783374955089465/\",\r\n    \"Twitter\":\"https://twitter.com/HotelParkInn2\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44325/api/hotel",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelName\":\"Nirali Resorts\",\r\n    \"Address\":\"Kalavad Rd, opp. V.V.P. Engineering College, Rajkot, Gujarat 360005\",\r\n    \"City\":\"Rajkot\",\r\n    \"Pincode\":\"360005\",\r\n    \"Contact\":\"074796 99999\",\r\n    \"ContactPerson\":\"Vipulbhai\",\r\n    \"Website\":\"http://niraliresorts.com/\",\r\n    \"Facebook\":\"https://www.facebook.com/NiraliResorts/\",\r\n    \"Twitter\":\"https://twitter.com/NiraliResorts\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44325/api/hotel",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelName\":\"Regency Lagoon Resort\",\r\n    \"Address\":\"Nyari Dam Road, Kalavad Rd, Rajkot, Gujarat 360005\",\r\n    \"City\":\"Rajkot\",\r\n    \"Pincode\":\"360005\",\r\n    \"Contact\":\"070690 53611\",\r\n    \"ContactPerson\":\"Mananbhai\",\r\n    \"Website\":\"http://regencylagoonresort.com/\",\r\n    \"Facebook\":\"https://www.facebook.com/RegencyLagoonResort/\",\r\n    \"Twitter\":\"https://twitter.com/regency_lagoon\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44325/api/hotel",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelName\":\"The Imperial Palace\",\r\n    \"Address\":\"Dr Yagnik Rd, Jagnath Plot, Rajkot, Gujarat 360001\",\r\n    \"City\":\"Rajkot\",\r\n    \"Pincode\":\"360001\",\r\n    \"Contact\":\"0281 248 0000\",\r\n    \"ContactPerson\":\"Ravibhai\",\r\n    \"Website\":\"http://www.imperialpalace.in/\",\r\n    \"Facebook\":\"https://www.facebook.com/imp.palace/\",\r\n    \"Twitter\":\"https://twitter.com/imperial_rajkot\",\r\n    \"IsActive\":\"1\",\r\n    \"CreatedBy\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44325/api/hotel",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44325/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SampleMVCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Booking">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoomID" Type="int" />
+          <Property Name="BookingDate" Type="datetime" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Hotel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HotelName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Address" Type="nvarchar" MaxLength="500" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" />
+          <Property Name="Pincode" Type="nvarchar" MaxLength="10" />
+          <Property Name="Contact" Type="nvarchar" MaxLength="50" />
+          <Property Name="ContactPerson" Type="nvarchar" MaxLength="100" />
+          <Property Name="Website" Type="nvarchar" MaxLength="100" />
+          <Property Name="Facebook" Type="nvarchar" MaxLength="100" />
+          <Property Name="Twitter" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsActive" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EMAIL" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PASSWORD" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Category" Type="nvarchar" MaxLength="50" />
+          <Property Name="Price" Type="int" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="Short_Description" Type="nvarchar" MaxLength="200" />
+          <Property Name="Long_Description" Type="nvarchar(max)" />
+          <Property Name="Small_Img" Type="nvarchar(max)" />
+          <Property Name="Large_Img" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Room">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HotelID" Type="int" />
+          <Property Name="RoomName" Type="nvarchar" MaxLength="50" />
+          <Property Name="RoomCategory" Type="nvarchar" MaxLength="50" />
+          <Property Name="RoomPrice" Type="int" />
+          <Property Name="IsActive" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="UpdateBy" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <Association Name="FK_Booking_Room">
+          <End Role="Room" Type="Self.Room" Multiplicity="0..1" />
+          <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Room">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Booking">
+              <PropertyRef Name="RoomID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Room_Hotel">
+          <End Role="Hotel" Type="Self.Hotel" Multiplicity="0..1" />
+          <End Role="Room" Type="Self.Room" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hotel">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Room">
+              <PropertyRef Name="HotelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SampleMVCModelStoreContainer">
+          <EntitySet Name="Booking" EntityType="Self.Booking" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hotel" EntityType="Self.Hotel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Room" EntityType="Self.Room" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Booking_Room" Association="Self.FK_Booking_Room">
+            <End Role="Room" EntitySet="Room" />
+            <End Role="Booking" EntitySet="Booking" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Room_Hotel" Association="Self.FK_Room_Hotel">
+            <End Role="Hotel" EntitySet="Hotel" />
+            <End Role="Room" EntitySet="Room" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SampleMVCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Booking">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoomID" Type="Int32" />
+          <Property Name="BookingDate" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Room" Relationship="Self.FK_Booking_Room" FromRole="Booking" ToRole="Room" />
+        </EntityType>
+        <EntityType Name="Hotel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HotelName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Pincode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Contact" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ContactPerson" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Website" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Facebook" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Twitter" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Rooms" Relationship="Self.FK_Room_Hotel" FromRole="Hotel" ToRole="Room" />
+        </EntityType>
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="Int32" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="Short_Description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Long_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Small_Img" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Large_Img" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Room">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HotelID" Type="Int32" />
+          <Property Name="RoomName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RoomCategory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RoomPrice" Type="Int32" />
+          <Property Name="IsActive" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Bookings" Relationship="Self.FK_Booking_Room" FromRole="Room" ToRole="Booking" />
+          <NavigationProperty Name="Hotel" Relationship="Self.FK_Room_Hotel" FromRole="Room" ToRole="Hotel" />
+        </EntityType>
+        <Association Name="FK_Booking_Room">
+          <End Role="Room" Type="Self.Room" Multiplicity="0..1" />
+          <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Room">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Booking">
+              <PropertyRef Name="RoomID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Room_Hotel">
+          <End Role="Hotel" Type="Self.Hotel" Multiplicity="0..1" />
+          <End Role="Room" Type="Self.Room" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hotel">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Room">
+              <PropertyRef Name="HotelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SampleMVCEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Bookings" EntityType="Self.Booking" />
+          <EntitySet Name="Hotels" EntityType="Self.Hotel" />
+          <EntitySet Name="Logins" EntityType="Self.Login" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
+          <EntitySet Name="Rooms" EntityType="Self.Room" />
+          <AssociationSet Name="FK_Booking_Room" Association="Self.FK_Booking_Room">
+            <End Role="Room" EntitySet="Rooms" />
+            <End Role="Booking" EntitySet="Bookings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Room_Hotel" Association="Self.FK_Room_Hotel">
+            <End Role="Hotel" EntitySet="Hotels" />
+            <End Role="Room" EntitySet="Rooms" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SampleMVCModelStoreContainer" CdmEntityContainer="SampleMVCEntities">
+          <EntitySetMapping Name="Bookings">
+            <EntityTypeMapping TypeName="SampleMVCModel.Booking">
+              <MappingFragment StoreEntitySet="Booking">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="RoomID" ColumnName="RoomID" />
+                <ScalarProperty Name="BookingDate" ColumnName="BookingDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hotels">
+            <EntityTypeMapping TypeName="SampleMVCModel.Hotel">
+              <MappingFragment StoreEntitySet="Hotel">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="HotelName" ColumnName="HotelName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+                <ScalarProperty Name="Twitter" ColumnName="Twitter" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Logins">
+            <EntityTypeMapping TypeName="SampleMVCModel.Login">
+              <MappingFragment StoreEntitySet="Login">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="SampleMVCModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Short_Description" ColumnName="Short_Description" />
+                <ScalarProperty Name="Long_Description" ColumnName="Long_Description" />
+                <ScalarProperty Name="Small_Img" ColumnName="Small_Img" />
+                <ScalarProperty Name="Large_Img" ColumnName="Large_Img" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Rooms">
+            <EntityTypeMapping TypeName="SampleMVCModel.Room">
+              <MappingFragment StoreEntitySet="Room">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="HotelID" ColumnName="HotelID" />
+                <ScalarProperty Name="RoomName" ColumnName="RoomName" />
+                <ScalarProperty Name="RoomCategory" ColumnName="RoomCategory" />
+                <ScalarProperty Name="RoomPrice" ColumnName="RoomPrice" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
